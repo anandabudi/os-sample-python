@@ -5,7 +5,7 @@ application = Flask(__name__)
 def hello():
     return "Hello World!"
 
-@application.route("/transactions/get_all_transactions", method=["GET"])
+@application.route("/transactions/get_all_transactions")
 def get_all_transactions():
     return "Return all transactions"
 
