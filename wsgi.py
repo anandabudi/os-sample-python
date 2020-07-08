@@ -21,6 +21,10 @@ def get_transaction(transaction_id=None):
 def example():
     return {'hello': 'world'}
 
+@application.route('/example2', methods=['GET'])
+def example2():
+	return {'hello': 'dunia'}
+
 if __name__ == "__main__":
     # application.run()
     application.run(debug=True)
