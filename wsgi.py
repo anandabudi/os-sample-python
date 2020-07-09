@@ -1,9 +1,6 @@
-# from flask import Flask
 from flask_api import FlaskAPI
 
 application = FlaskAPI(__name__)
-
-# application = Flask(__name__)
 
 @application.route("/", methods=['GET'])
 def hello():
@@ -21,11 +18,6 @@ def get_transaction(transaction_id=None):
 def example():
     return {'hello': 'world'}
 
-@application.route('/example2', methods=['GET'])
-def example2():
-	return {'hello': 'dunia'}
-
-if __name__ == "__main__":
-    # application.run()
+if __name__ == "__main__":   
     application.run(debug=True)
 
