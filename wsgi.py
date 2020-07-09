@@ -14,6 +14,11 @@ def get_all_transactions():
 def get_transaction(transaction_id=None):
 	return "Return " + transaction_id
 
+
+@application.route("/products/get_all_products", methods=['GET'])
+def get_all_products():
+    return {'productID': '1'}
+
 @application.route('/example', methods=['GET'])
 def example():
     return {'hello': 'world'}
